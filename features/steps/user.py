@@ -28,4 +28,5 @@ def step_impl(context, status_code):
 @then(u'the following user details are returned')
 def step_impl(context):
     for row in context.table:
-        assert_equal(row['name'], json.loads(context.res.data)['name'])
+        assert_equal(row['name'], json.loads(
+            context.res.data.decode('utf-8'))['name'])
