@@ -12,7 +12,7 @@ def step_impl(context):
 
 @given(u'some users are in the system')
 def step_impl(context):
-    USERS.update({'david01': {'name': 'David Sale'}})
+    USERS.update({'bob01': {'name': 'Robert Sale'}})
 
 
 @when(u'I retrieve the customer {user}')

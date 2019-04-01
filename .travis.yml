@@ -8,4 +8,4 @@ install: pip install -r requirements.txt
 before_script:
   - export FLASK_APP="$TRAVIS_BUILD_DIR/app/app.py"
   - export FLASK_DEBUG=1
-script: behave test
+script: behave
